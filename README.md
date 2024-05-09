@@ -1,121 +1,65 @@
-<div align=center>
+# THP - FRONTEND APP
 
-<!-- [![ntl-badge]][ntl-link] ![views] ![stars] ![forks] ![issues] ![license] ![repo-size] -->
+## Project Structure
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="public/nextjs-light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="public/nextjs-dark.svg">
-  <img alt="Next.js">
-</picture>
-
-# Next.js Starter Template
-
-### A Minimal Next.js Starter Template with TypeScript, Tailwind CSS, and pre-configured with ESLint, Prettier, and Husky.
-
-</div>
-
-## Features
-
-- ⚡ **[Next.js](https://nextjs.org/)** - A React Framework for Production
-- 🔥 **[App Router](https://nextjs.org/docs/app)** - It is a new paradigm for building applications using React's latest features.
-- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** - A Utility-First CSS Framework for Rapid UI Development
-- 📦 **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript that compiles to plain JavaScript
-- 📝 **[ESLint](https://eslint.org/)** - The pluggable linting utility for JavaScript and JSX
-- 🛠 **[Prettier](https://prettier.io/)** - An opinionated code formatter
-- 🐶 **[Husky](https://typicode.github.io/husky/#/)** - A tool that makes Git hooks easy
-- 🚫 **[lint-staged](https://github.com/okonet/lint-staged)** - Run linters against staged git files
-
-## Getting Started
+> Each page should go under pages/ directory
+> Here is the project stucture
 
 ```bash
-bun create next-app -e "https://github.com/TracyMuso/Nextjs-starter-template" <project-name>
-
-npx create-next-app -e "https://github.com/TracyMuso/Nextjs-starter-template" <project-name>
+|_ components/
+  |_ index.ts # this will be the file that will export all the components, but each component should have a folder like
+  |_ component-name
+    |_ index.ts # or js
+    |_ types.ts # if necessary
+|_ helpers
+  |_ index.ts # this will be the file that will export all the helpers functions and classes, but each component should have a folder or file
+  |_ apiService.ts # for example
+|_ constants
+  |_ index.ts # to export all the constants
 ```
 
-<p align="center" style="font-weight: bold;">OR</p>
+## Getting started
 
-**Install `degit` globally**
+Depending on the task you got assigned, you can test on a dedicated environment
+
+- Install all dependencies
+
+  `$ yarn`
+
+- Start the whole app in dev mode using:
+
+  `$ yarn dev`
+
+## Contribution guideline
+
+- After all the changes, make sure there is no linting error
+- Make sure to run builds for your working project, eg, if I am working on auth, I would run: `$ yarn build`
+- Make sure husky hooks executes successfully (if not the first time you may consider running `$ npx husky`)
+- Make a meaninfull PR describing the work you did, with a short loom record
+
+### Commits formats
+
+Since we have multiple apps in one, making meaningful commits is crutial, otherwise PRs won't be accepted, make sure the following appears in the commit:
+
+- The name of the folder or page changes belong to
+- A short desctiption of the changes
+
+Here is an example of a valid / invalid commit:
 
 ```bash
-bun i -g degit || pnpm i -g degit || yarn global add degit || npm i -g degit
+# BAD COMMIT MESSAGE PLEASE AVOID AS MUCH AS POSSIBLE
+$ git commit -m 'update the loader on the page'
+
+# A MEANINGFUL COMMIT MESSAGE
+$ git commit -m 'feat(landing-page): update the loader component accross the landing page'
+
 ```
 
-**Create a new project from this template**
+### Pull Request Formats
 
-```bash
-degit rajput-hemant/nextjs-template <project-name>
-cd <project-name>
-```
+A valid PR should contain:
 
-**Install dependencies**
-
-```bash
-bun i || pnpm i || yarn || npm i
-```
-
-**Initialize a new git repository _(Optional)_:**
-
-```bash
-git init
-git add .
-git commit --no-verify -m "init"
-```
-
-## Available Scripts
-
-In the project directory, you can run:
-
-| **Script**     | **Description**                                      |
-| -------------- | ---------------------------------------------------- |
-| `dev`          | Runs the app in the development mode.                |
-| `build`        | Builds the app for production to the `.next` folder. |
-| `start`        | Runs the built app in the production mode.           |
-| `lint`         | Runs next lint on the project.                       |
-| `check-types`  | Runs TypeScript type checker.                        |
-| `format`       | Formats the code with Prettier.                      |
-| `check-format` | Checks if the code is formatted with Prettier.       |
-| `prepare`      | Installs husky git hooks.                            |
-
-## After Installation Checklist
-
-- [ ] Update `package.json` with your project details.
-- [ ] Update `README.md` with your project details.
-- [ ] Update `LICENSE` with your name and year.
-
-## Switching Package Manager
-
-This template uses [yarn](https://yarnpkg.com/cli/install) as the default package manager. If you want to use `pnpm`, `npm` or `bun`, you need to remove the `yarn.lock` file and run `pnpm i`, `npm i` or `bun i` to generate the lock file for the respective package manager.
-
-<!-- ## Deployments
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/rajput-hemant/nextjs-template)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rajput-hemant/nextjs-template) -->
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<!-- ## Contributors:
-
-<div align=center>
-
-[![][contributors]][contributors-graph]
-
-_Note: It may take up to 24h for the [contrib.rocks][contrib-rocks] plugin to update because it's refreshed once a day._
-
-</div> -->
-
-<!----------------------------------{ Labels }--------------------------------->
-<!--
-[views]: https://komarev.com/ghpvc/?username=nextjs-template&label=view%20counter&color=red&style=flat
-[repo-size]: https://img.shields.io/github/repo-size/TracyMuso/nextjs-template
-[issues]: https://img.shields.io/github/issues-raw/rajput-hemant/nextjs-template
-[license]: https://img.shields.io/github/license/rajput-hemant/nextjs-template
-[forks]: https://img.shields.io/github/forks/rajput-hemant/nextjs-template?style=flat
-[stars]: https://img.shields.io/github/stars/rajput-hemant/nextjs-template
-[contributors]: https://contrib.rocks/image?repo=rajput-hemant/nextjs-template&max=500
-[contributors-graph]: https://github.com/rajput-hemant/nextjs-template/graphs/contributors
-[contrib-rocks]: https://contrib.rocks/preview?repo=rajput-hemant%2Fnextjs-template
-[ntl-badge]: https://api.netlify.com/api/v1/badges/6955f80c-0747-4947-a344-e7c647012cbe/deploy-status
-[ntl-link]: https://app.netlify.com/sites/react-template-vite/deploys -->
+- The name of the platform the PR belongs to
+- A tag to the issue you are resolving
+- A loom/zoom recording or screenshots of visible changes
+- A short description that summarizes all the commits added
