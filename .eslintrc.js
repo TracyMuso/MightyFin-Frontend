@@ -5,12 +5,17 @@ module.exports = {
   },
   extends: [
     "plugin:react/recommended",
-    "standard-with-typescript",
+    "love",
     "prettier",
     "next/core-web-vitals",
     "plugin:storybook/recommended",
   ],
-  overrides: [],
+  overrides: [
+    {
+      files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      extends: "love",
+    },
+  ],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
