@@ -8,14 +8,8 @@ module.exports = {
     "love",
     "prettier",
     "next/core-web-vitals",
-    "plugin:storybook/recommended",
   ],
-  overrides: [
-    {
-      files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
-      extends: "love",
-    },
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
