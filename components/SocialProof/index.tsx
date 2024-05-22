@@ -4,26 +4,26 @@ const SocialProof = () => {
   return (
     <section className="font-Montserrat flex flex-col">
       <div className="flex justify-between gap-4 bg-yellow-300 h-[255px] w-full">
-        <div className={`relative w-2/5`}>
+        <div className={`relative w-[650px]`}>
           <div className={`${styles.rightText}`} />
-          <div className="absolute top-[25%] left-[12%] border-left-2 pr-[63px]">
+          <div className="absolute top-[25%] left-[12%] border-left-2 border-white pr-[43px]">
             <h3 className="font-700 font-extrabold text-3xl leading-14 text-left">
               Trusted By Thousands Real People, Real Results
             </h3>
           </div>
         </div>
-        <div>
-          <span>
-            <p>3 years</p>
-            <small>experience</small>
+        <div className="flex justify-between items-center w-3/5 px-4">
+          <span className="flex flex-col gap-5 items-center justify around w-1/3">
+            <p className="font-600 text-3xl font-bold">3 years</p>
+            <small className="text-[18px]">Experience</small>
           </span>
-          <span>
-            <p>Over K 5M</p>
-            <small>loan disbursed</small>
+          <span className="flex flex-col gap-5 items-center justify around w-1/3">
+            <p className="font-600 text-3xl font-bold">Over K 5M</p>
+            <small className="text-[18px]">Loan disbursed</small>
           </span>
-          <span>
-            <p>3.5 k </p>
-            <small>registered users</small>
+          <span className="flex flex-col gap-5 items-center justify around w-1/3">
+            <p className="font-600 text-3xl font-bold">3.5 k </p>
+            <small className="text-[18px]">Registered users</small>
           </span>
         </div>
       </div>
