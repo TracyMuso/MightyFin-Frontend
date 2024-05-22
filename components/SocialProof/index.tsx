@@ -27,10 +27,12 @@ const SocialProof = () => {
           </span>
         </div>
       </div>
-      <div>
-        <div>
-          <h2>Empowering You with Strong Partnerships</h2>
-          <p>
+      <div className="flex flex-col justify-between py-12">
+        <div className="intro text-center gap-4">
+          <h2 className="h3 font-600 font-bold text-3xl pb-6">
+            Empowering You with Strong Partnerships
+          </h2>
+          <p className="text-gray-400">
             We believe in collaboration and excellence. Discover our trusted
             partners and the awards recognizing our achievements.
           </p>
