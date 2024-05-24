@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PartnershipData } from "@/constants/data/landingPage";
+import { PartnershipData, LeadershipData } from "@/constants/data/landingPage";
 import styles from "../../styles/socialProof.module.css";
 
 const SocialProof = () => {
@@ -39,7 +39,7 @@ const SocialProof = () => {
             partners and the awards recognizing our achievements.
           </p>
         </div>
-        <div className="flex gap-2 justify-between items-center w-11/12 py-6 mx-auto">
+        <div className="flex gap-2 justify-between items-center w-11/12 pt-6 pb-12 mx-auto">
           {PartnershipData.map((item, idx) => {
             return (
               <div key={idx}>
@@ -49,7 +49,23 @@ const SocialProof = () => {
           })}
         </div>
       </div>
-      <div>Leadership Recognition</div>
+      <div className="flex justify-between items-center px-12 py-8">
+        <Image
+          src={"/Images/LandingPage/lr-title.png"}
+          alt="leadership"
+          width={267}
+          height={120}
+        />
+        <div className="flex items-center gap-6">
+          {LeadershipData.map((item, idx) => {
+            return (
+              <div key={idx}>
+                <Image src={item.url} alt={item.alt} width={210} height={150} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 };

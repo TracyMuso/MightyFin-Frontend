@@ -37,3 +37,22 @@ export const PartnershipData: PartnershipDataType[] = [
     url: "/Images/LandingPage/bongohive.png",
   },
 ];
+
+export const LeadershipData: PartnershipDataType[] = [
+  {
+    alt: "badge icon",
+    url: "/Images/LandingPage/lr-badge-1.png",
+  },
+  {
+    alt: "badge icon",
+    url: "/Images/LandingPage/lr-badge-2.png",
+  },
+  {
+    alt: "badge icon",
+    url: "/Images/LandingPage/lr-badge-3.png",
+  },
+  {
+    alt: "badge icon",
+    url: "/Images/LandingPage/lr-badge-4.png",
+  },
+];
