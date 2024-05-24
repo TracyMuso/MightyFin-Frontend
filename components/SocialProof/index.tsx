@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { PartnershipData } from "@/constants/data/landingPage";
 import styles from "../../styles/socialProof.module.css";
 
 const SocialProof = () => {
@@ -28,16 +30,24 @@ const SocialProof = () => {
         </div>
       </div>
       <div className="flex flex-col justify-between py-12">
-        <div className="intro text-center gap-4">
+        <div className="intro text-center gap-4 w-2/3 mx-auto">
           <h2 className="h3 font-600 font-bold text-3xl pb-6">
             Empowering You with Strong Partnerships
           </h2>
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-center w-4/5 mx-auto">
             We believe in collaboration and excellence. Discover our trusted
             partners and the awards recognizing our achievements.
           </p>
         </div>
-        <div>icons</div>
+        <div className="flex gap-2 justify-between items-center w-11/12 py-6 mx-auto">
+          {PartnershipData.map((item, idx) => {
+            return (
+              <div key={idx}>
+                <Image src={item.url} alt={item.alt} width={113} height={95} />
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div>Leadership Recognition</div>
     </section>
