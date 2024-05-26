@@ -1,0 +1,12 @@
+.rightText {
+  position: absolute;
+  left: 2%;
+  width: 500px;
+  height: 250px;
+  background-blend-mode: overlay;
+  background-image: url("/Images/sp.png");
+  background-repeat: none;
+  background-position: left;
+  background-size: 400 300 contain;
+  opacity: 50%;
+}
