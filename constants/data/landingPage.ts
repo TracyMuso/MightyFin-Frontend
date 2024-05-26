@@ -3,6 +3,11 @@ interface PartnershipDataType {
   url: string;
 }
 
+export interface HeroPointType {
+  title: string;
+  text: string;
+}
+
 export const PartnershipData: PartnershipDataType[] = [
   {
     alt: "aws icon",
