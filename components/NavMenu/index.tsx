@@ -22,7 +22,7 @@ const NavMenu = () => {
         ))}
       </div>
       <div>
-        <button className="px-8 py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white">
+        <button className="px-8 py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white font-bold">
           Sign up
         </button>
       </div>
