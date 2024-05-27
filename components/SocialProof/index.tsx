@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { PartnershipData, LeadershipData } from "@/constants/data/landingPage";
-import styles from "../../styles/socialProof.module.css";
+import styles from "../../styles/landingPage.module.css";
 
 const SocialProof = () => {
   return (
