@@ -30,7 +30,7 @@
 }
 
 .stepGrad {
-  border-image-source: linear-gradient(
+  background: linear-gradient(
     180deg,
     #ffffff 0%,
     #ffc10d 48.81%,

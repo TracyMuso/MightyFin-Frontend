@@ -56,25 +56,25 @@ export const LeadershipData: PartnershipDataType[] = [
 
 export const LoanStepsData: LoanStepDataType[] = [
   {
-    step: "1",
+    step: 1,
     icon: "/Icons/system-uicons_user-add.png",
     title: "Online Account Registration",
     text: "Create Your Account",
   },
   {
-    step: "2",
+    step: 2,
     icon: "/Icons/fluent_form-24-regular.png",
     title: "Loan Application Form",
     text: "Select Loan & Enter Details",
   },
   {
-    step: "3",
+    step: 3,
     icon: "/Icons/material-symbols-light_domain-verification-outline-rounded.png",
     title: "Verification",
-    text: "Verify Your Email and Phone number",
+    text: "Verify Email and Phone number",
   },
   {
-    step: "4",
+    step: 4,
     icon: "/Icons/wpf_approval.png",
     title: "Loan Approval Confirmation",
     text: "Get Your Loan Decision ",
