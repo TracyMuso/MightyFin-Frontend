@@ -1,4 +1,4 @@
-import type { HeroPointType } from "@/constants/data/landingPage";
+import { type HeroPointType } from "@/types";
 import styles from "../../styles/landingPage.module.css";
 
 const Point = ({ title, text }: HeroPointType) => {

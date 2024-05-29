@@ -28,3 +28,12 @@
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.16);
 }
+
+.stepGrad {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffc10d 48.81%,
+    #ffffff 95.71%
+  );
+}
