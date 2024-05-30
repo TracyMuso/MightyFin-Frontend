@@ -16,3 +16,10 @@ export interface LoanStepDataType {
   title: string;
   text: string;
 }
+
+export interface BlogDataType {
+  title: string;
+  author: string;
+  date: string;
+  content: string;
+}
