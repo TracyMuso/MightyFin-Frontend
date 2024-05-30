@@ -1,4 +1,6 @@
 import Image from "next/image";
+import BlogPreview from "../Cards/blog-preview";
+import { BlogData } from "@/constants/data/landingPage";
 
 const BlogandNews = () => {
   return (
@@ -51,8 +53,12 @@ const BlogandNews = () => {
           />
         </div>
       </div>
-      <div>
-        <div>left cards</div>
+      <div className="flex justify-between py-12">
+        <div className="flex flex-col w-3/5">
+          {BlogData.map((item, idx) => {
+            return <BlogPreview key={idx} {...item} />;
+          })}
+        </div>
         <div>right cards</div>
       </div>
     </section>

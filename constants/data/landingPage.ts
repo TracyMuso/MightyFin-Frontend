@@ -1,4 +1,8 @@
-import type { PartnershipDataType, LoanStepDataType } from "@/types";
+import type {
+  PartnershipDataType,
+  LoanStepDataType,
+  BlogDataType,
+} from "@/types";
 
 export const PartnershipData: PartnershipDataType[] = [
   {
@@ -78,5 +82,22 @@ export const LoanStepsData: LoanStepDataType[] = [
     icon: "/Icons/wpf_approval.png",
     title: "Loan Approval Confirmation",
     text: "Get Your Loan Decision ",
+  },
+];
+
+export const BlogData: BlogDataType[] = [
+  {
+    title: "Understanding Your Borrowing Options",
+    author: "Chanda Phiri",
+    date: "12th March, 2024",
+    content:
+      "It will explain different loan types (personal, business, auto etc.), common loan terms (interest rate, repayment period), and factors to consider when choosing a loan...",
+  },
+  {
+    title: "How to Effectively repay your loan",
+    author: "Vwa Boa",
+    date: "13th March, 2024",
+    content:
+      "If you have personal loan debt and are in a financial position to pay it off early, doing so could save you money on interest and boost your credit score...",
   },
 ];
