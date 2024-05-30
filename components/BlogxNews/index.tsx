@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BlogPreview from "../Cards/blog-preview";
-import { BlogData } from "@/constants/data/landingPage";
+import MiniBlogCard from "../Cards/mini-blog-news-card";
+import { BlogData, miniBlogCardData } from "@/constants/data/landingPage";
 
 const BlogandNews = () => {
   return (
@@ -54,12 +55,18 @@ const BlogandNews = () => {
         </div>
       </div>
       <div className="flex justify-between py-12">
-        <div className="flex flex-col w-3/5">
+        <div className="flex flex-col w-3/5 gap-16">
           {BlogData.map((item, idx) => {
             return <BlogPreview key={idx} {...item} />;
           })}
         </div>
-        <div>right cards</div>
+        <div>
+          <div className="flex flex-col gap-3">
+            {miniBlogCardData.map((item, idx) => {
+              return <MiniBlogCard key={idx} {...item} />;
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );

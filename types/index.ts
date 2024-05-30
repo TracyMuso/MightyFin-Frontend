@@ -23,3 +23,10 @@ export interface BlogDataType {
   date: string;
   content: string;
 }
+
+export interface MiniBlogDataType {
+  postType: string;
+  title: string;
+  author: string;
+  image: string;
+}

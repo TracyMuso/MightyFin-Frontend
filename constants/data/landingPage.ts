@@ -2,6 +2,7 @@ import type {
   PartnershipDataType,
   LoanStepDataType,
   BlogDataType,
+  MiniBlogDataType,
 } from "@/types";
 
 export const PartnershipData: PartnershipDataType[] = [
@@ -99,5 +100,26 @@ export const BlogData: BlogDataType[] = [
     date: "13th March, 2024",
     content:
       "If you have personal loan debt and are in a financial position to pay it off early, doing so could save you money on interest and boost your credit score...",
+  },
+];
+
+export const miniBlogCardData: MiniBlogDataType[] = [
+  {
+    postType: "Videos",
+    title: "Smart Budgeting Tips for Civil Servants",
+    author: "Lute Chongo",
+    image: "/Images/LandingPage/calculator.png",
+  },
+  {
+    postType: "Blog Post",
+    title: "The Dos and Don'ts of Building Your Credit Score",
+    author: "Chanda Phiri",
+    image: "/Images/LandingPage/creditcard.png",
+  },
+  {
+    postType: "Videos",
+    title: "My experience payinig off a loan on time",
+    author: "Adelaja Oluwaseyijeje",
+    image: "/Images/LandingPage/calculator.png",
   },
 ];

@@ -17,7 +17,7 @@ const BlogPreview = ({ title, author, date, content }: BlogDataType) => {
             <p className="italic text-m font-light">By {author}</p>
             <p className="italic text-m font-light">{date}</p>
           </div>
-          <p className="text-gray-400 leading-8 font-normal">{content}</p>
+          <p className="text-gray-400 leading-7 font-normal">{content}</p>
         </article>
         <button className="px-10 py-4 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white">
           Read more
