@@ -37,3 +37,18 @@
     #ffffff 95.71%
   );
 }
+
+.footerCTAContainer {
+  background-image: url("/Images/LandingPage/curly-line-1.png");
+  background-repeat: none;
+  background-size: cover;
+  padding-bottom: 60px;
+  height: 80vh;
+  width: 100%;
+}
+
+.footerCtaMain {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 80%;
+  padding: 0;
+}
