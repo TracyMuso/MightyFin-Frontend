@@ -30,3 +30,8 @@ export interface MiniBlogDataType {
   author: string;
   image: string;
 }
+
+export interface BlogCategoriesDataType {
+  category: string;
+  url: string;
+}

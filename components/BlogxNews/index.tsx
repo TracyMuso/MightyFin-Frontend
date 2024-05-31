@@ -1,12 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import BlogPreview from "../Cards/blog-preview";
 import MiniBlogCard from "../Cards/mini-blog-news-card";
-import { BlogData, miniBlogCardData } from "@/constants/data/landingPage";
+import {
+  BlogData,
+  miniBlogCardData,
+  BlogCategoriesData,
+} from "@/constants/data/landingPage";
 
 const BlogandNews = () => {
   return (
     <section className="flex flex-col items-center font-Montserrat px-16 py-24">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pb-12">
         <div>
           <article className="pb-10">
             <h2 className="text-2xl font-extrabold leading-9">
@@ -60,10 +65,28 @@ const BlogandNews = () => {
             return <BlogPreview key={idx} {...item} />;
           })}
         </div>
-        <div>
+        <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-3">
             {miniBlogCardData.map((item, idx) => {
               return <MiniBlogCard key={idx} {...item} />;
+            })}
+          </div>
+          <div className="flex flex-col w-4/5 gap-8">
+            <p className="font-bold">Categories</p>
+            {BlogCategoriesData.map((item, idx) => {
+              return (
+                <div key={idx} className="flex justify-between items-center">
+                  <span>{item.category}</span>
+                  <Link href={item.url}>
+                    <Image
+                      src={"/Icons/Arrow-1.svg"}
+                      alt="arrow icon"
+                      width={50}
+                      height={10}
+                    />
+                  </Link>
+                </div>
+              );
             })}
           </div>
         </div>

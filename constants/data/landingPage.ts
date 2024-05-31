@@ -3,6 +3,7 @@ import type {
   LoanStepDataType,
   BlogDataType,
   MiniBlogDataType,
+  BlogCategoriesDataType,
 } from "@/types";
 
 export const PartnershipData: PartnershipDataType[] = [
@@ -121,5 +122,20 @@ export const miniBlogCardData: MiniBlogDataType[] = [
     title: "My experience payinig off a loan on time",
     author: "Adelaja Oluwaseyijeje",
     image: "/Images/LandingPage/calculator.png",
+  },
+];
+
+export const BlogCategoriesData: BlogCategoriesDataType[] = [
+  {
+    category: "Personal Finance",
+    url: "#",
+  },
+  {
+    category: "Entrepreneurial Finance",
+    url: "#",
+  },
+  {
+    category: "Lifestyle & Finance",
+    url: "#",
   },
 ];
