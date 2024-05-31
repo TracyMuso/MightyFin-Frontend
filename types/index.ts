@@ -1,4 +1,28 @@
-// add custom types here
+export type User = {
+  id: string;
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+  email: string;
+  NRCNumber: string;
+  gender: "male" | "female";
+  employeeNumber: string;
+  jobTitle: string;
+  department: string;
+  ministry: string;
+  city: string;
+  country: string;
+};
+
+export type LoanType = {
+  id: string;
+  loanType: string;
+  amount: string | number;
+  duration: string | number;
+  totalRepayment: string;
+  monthlyRepayment: string;
+  nextRepaymentDate: string;
+};
 
 export interface PartnershipDataType {
   alt: string;
