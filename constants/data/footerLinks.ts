@@ -1,0 +1,85 @@
+import { type NavItem } from "@/types";
+
+interface FooterLink {
+  title: string;
+  links: NavItem[];
+}
+
+interface SocialLink {
+  label: string;
+  icon: string;
+  link: string;
+}
+
+export const footerLinks: FooterLink[] = [
+  {
+    title: "Company",
+    links: [
+      {
+        label: "Home",
+        link: "#",
+      },
+      {
+        label: "About Us",
+        link: "#",
+      },
+      {
+        label: "Products",
+        link: "#",
+      },
+      {
+        label: "Blog",
+        link: "#",
+      },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      {
+        label: "Terms and conditions",
+        link: "#",
+      },
+      {
+        label: "Privacy",
+        link: "#",
+      },
+    ],
+  },
+];
+
+export const footerContactLinks: SocialLink[] = [
+  {
+    label: "+260 97 8555299",
+    icon: "",
+    link: "#",
+  },
+  {
+    label: "info@mightyfinance.co.zm",
+    icon: "",
+    link: "#",
+  },
+  {
+    label: "13 Chikuni Close, Off Makishi Road, Northmead, Lusaka.",
+    icon: "",
+    link: "#",
+  },
+];
+
+export const footerSocialLinks: SocialLink[] = [
+  {
+    label: "Instagram",
+    icon: "/Icons/instagram.svg",
+    link: "#",
+  },
+  {
+    label: "Linkedin",
+    icon: "/Icons/linkedin.svg",
+    link: "#",
+  },
+  {
+    label: "Facebook",
+    icon: "/Icons/fb-icon.svg",
+    link: "#",
+  },
+];
