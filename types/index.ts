@@ -59,3 +59,10 @@ export interface BlogCategoriesDataType {
   category: string;
   url: string;
 }
+
+export interface NavItem {
+  label: string;
+  link: string;
+  active?: boolean;
+  disabled?: boolean;
+}

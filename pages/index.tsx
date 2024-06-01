@@ -4,6 +4,7 @@ import NavMenu from "@/components/NavMenu";
 import LoanSteps from "@/components/LoanSteps";
 import SocialProof from "@/components/SocialProof";
 import BlogandNews from "@/components/BlogxNews";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutUs />
       <LoanSteps />
       <BlogandNews />
+      <Footer />
     </main>
   );
 }
