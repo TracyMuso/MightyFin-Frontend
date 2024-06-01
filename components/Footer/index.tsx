@@ -37,48 +37,58 @@ const Footer = () => {
         </div>
       </div>
       <footer className="flex flex-col">
-        <div className={`${styles.footerBorder} flex justify-between mx-auto`}>
+        <div
+          className={`${styles.footerBorder} flex justify-between mx-auto pb-8`}
+        >
           <div className="w-[370px] text-left">
             <Image src="/Images/Logo.png" alt="logo" width={368} height={80} />
-            <p className="text-gray-500 font-medium w-4/5">
+            <p className="text-gray-500 font-medium w-4/5 py-3">
               We simplify access to loans, empowering you to achieve your goals.
             </p>
           </div>
           <div className={`${styles.footerGrad}`} />
-          <div className="flex items-start justify between">
+          <div className="flex items-start justify-between w-3/5">
             {footerLinks.map((group, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-start justify-start gap-2"
+                className="flex flex-col items-start justify-start gap-4"
               >
-                <p>{group.title}</p>
+                <Link
+                  href={group.titleLink}
+                  className="font-normal text-m leading-normal"
+                >
+                  {group.title}
+                </Link>
                 {group.links.map((link, idx) => (
                   <Link
                     key={idx}
                     href={link.link}
-                    className="font-normal text-base leading-normal"
+                    className="font-normal text-m leading-normal"
                   >
                     {link.label}
                   </Link>
                 ))}
               </div>
             ))}
-            {footerContactLinks.map((item, idx) => (
-              <div
-                className="flex flex-col items-start justify-start gap-2"
-                key={idx}
-              >
-                <Link className="flex justify-between" href={item.link}>
-                  <Image src={item.icon} alt="icon" width={50} height={50} />
-                  <p>{item.label}</p>
+            <div className="flex flex-col items-start justify-start gap-4 w-2/5">
+              {footerContactLinks.map((item, idx) => (
+                <Link
+                  key={idx}
+                  className="flex justify-between"
+                  href={item.link}
+                >
+                  <span className="flex justify-between gap-4">
+                    <Image src={item.icon} alt="icon" width={25} height={25} />
+                    <p className="text-m">{item.label}</p>
+                  </span>
                 </Link>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-        <div>
-          <span>© 2024 All rights reserved</span>
-          <div>
+        <div className="flex items-center justify-between py-8 w-[90%] mx-auto">
+          <span className="text-gray-400">© 2024 All rights reserved</span>
+          <div className="flex items-center justify-between w-1/5">
             {footerSocialLinks.map((item, idx) => (
               <Image
                 key={idx}

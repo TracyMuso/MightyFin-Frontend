@@ -2,6 +2,7 @@ import { type NavItem } from "@/types";
 
 interface FooterLink {
   title: string;
+  titleLink: string;
   links: NavItem[];
 }
 
@@ -14,6 +15,7 @@ interface SocialLink {
 export const footerLinks: FooterLink[] = [
   {
     title: "Company",
+    titleLink: "#",
     links: [
       {
         label: "Home",
@@ -35,6 +37,7 @@ export const footerLinks: FooterLink[] = [
   },
   {
     title: "Legal",
+    titleLink: "#",
     links: [
       {
         label: "Terms and conditions",
@@ -51,17 +54,17 @@ export const footerLinks: FooterLink[] = [
 export const footerContactLinks: SocialLink[] = [
   {
     label: "+260 97 8555299",
-    icon: "",
+    icon: "/Icons/fluent_call-12-regular.svg",
     link: "#",
   },
   {
     label: "info@mightyfinance.co.zm",
-    icon: "",
+    icon: "/Icons/quill_mail.svg",
     link: "#",
   },
   {
     label: "13 Chikuni Close, Off Makishi Road, Northmead, Lusaka.",
-    icon: "",
+    icon: "/Icons/system-uicons_location.svg",
     link: "#",
   },
 ];
