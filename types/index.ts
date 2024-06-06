@@ -66,3 +66,11 @@ export interface NavItem {
   active?: boolean;
   disabled?: boolean;
 }
+
+export type inputDataType = {
+  label: string;
+  placeholder: string;
+  htmlFor: string;
+  inputType: string;
+  id: string;
+};
