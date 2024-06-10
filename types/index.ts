@@ -74,3 +74,10 @@ export type inputDataType = {
   inputType: string;
   id: string;
 };
+
+export type sidebarDataType = {
+  icon: string;
+  alt: string;
+  title: string;
+  onClick: () => void;
+};
