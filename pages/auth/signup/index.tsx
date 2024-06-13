@@ -88,7 +88,7 @@ const Signup = () => {
               <span className={`${styles.gradDiv}`} />
             </div>
             <div className="flex items-center justify-between gap-3 w-4/5 mx-auto">
-              <div className="bg-[#FAF1FF] flex justify-center items-center gap-3 py-2 px-5 rounded">
+              <div className="bg-[#FAF1FF] flex justify-center items-center gap-3 py-2 px-5 rounded cursor-pointer">
                 <Image
                   src={"/Icons/google.png"}
                   alt="google-icon"
@@ -97,7 +97,7 @@ const Signup = () => {
                 />
                 <p className="text-sm">Continue with Google</p>
               </div>
-              <div className="bg-[#FAF1FF] flex justify-center items-center gap-3 py-2 px-5 rounded">
+              <div className="bg-[#FAF1FF] flex justify-center items-center gap-3 py-2 px-5 rounded cursor-pointer">
                 <Image
                   src={"/Icons/apple.png"}
                   alt="apple-icon"
