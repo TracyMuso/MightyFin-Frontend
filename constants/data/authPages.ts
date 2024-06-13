@@ -44,3 +44,20 @@ export const signUpDets: inputDataType[] = [
     id: "confirm-password",
   },
 ];
+
+export const SignInDets: inputDataType[] = [
+  {
+    label: "Email Address",
+    placeholder: "",
+    htmlFor: "email",
+    inputType: "email",
+    id: "email",
+  },
+  {
+    label: "Password",
+    placeholder: "password",
+    htmlFor: "password",
+    inputType: "",
+    id: "password",
+  },
+];
