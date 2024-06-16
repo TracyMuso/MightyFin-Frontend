@@ -1,0 +1,24 @@
+.topNav {
+  border-bottom: 1px solid
+    linear-gradient(90deg, #ffffff 0%, #828282 36.5%, #ffffff 100%);
+  border-image-source: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #828282 36.5%,
+    #ffffff 100%
+  );
+}
+
+.main {
+  background: rgba(141, 0, 141, 0.02);
+}
+
+.gradDiv {
+  height: 1px;
+  width: 225px;
+  margin: auto 0;
+  background: linear-gradient(90deg, #ffffff 0%, #410064 52%, #ffffff 100%);
+}
+.circle {
+  transition: all 0.7s ease-in-out;
+}
