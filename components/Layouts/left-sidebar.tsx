@@ -4,7 +4,7 @@ import { LeftSidebarData } from "@/constants/data/dashboard";
 
 const LeftSidebar = () => {
   return (
-    <div className={`${styles.mainContainer} w-[280px] px-[10px] h-[100vh]`}>
+    <div className={`${styles.mainContainer} col-[_1/_2] row-span-2`}>
       {LeftSidebarData.map((item, idx) => (
         <div key={idx}>
           <div onClick={item.onClick}>
