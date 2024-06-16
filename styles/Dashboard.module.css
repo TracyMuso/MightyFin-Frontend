@@ -19,6 +19,3 @@
   margin: auto 0;
   background: linear-gradient(90deg, #ffffff 0%, #410064 52%, #ffffff 100%);
 }
-.circle {
-  transition: all 0.7s ease-in-out;
-}

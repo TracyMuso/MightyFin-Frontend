@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/Dashboard.module.css";
+import { Pie } from "./progressBar";
 
 const RightSideBar = () => {
   return (
@@ -58,6 +59,12 @@ const RightSideBar = () => {
             Withdraw
           </button>
         </div>
+      </div>
+      <div className="flex flex-col items-center mx-auto h-[300px] gap-0">
+        <Pie percentage={0} colour="purple" />
+        <h4 className="text-center text-gray-200 font-bold text-xl">
+          K 0 Left
+        </h4>
       </div>
     </div>
   );
