@@ -31,6 +31,23 @@ const CenterBar = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center rounded-md py-[120px] px-[163px] w-full bg-white">
+        <div className="flex flex-col gap-3 items-center">
+          <Image
+            src={"/Icons/gray-money-bag.png"}
+            width={100}
+            height={100}
+            alt="gray money bag"
+          />
+          <h5 className="text-2xl">No transactions yet?</h5>
+          <p className="text-gray-100">
+            Select the button below to make your first transaction.
+          </p>
+          <button className="px-10 py-4 w-[450px] text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white">
+            APPLY NOW
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
