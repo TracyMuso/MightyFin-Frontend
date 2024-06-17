@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { navLinks } from "@/constants/data/navMenu";
 
 const NavMenu = () => {
+  const router = useRouter();
+
   return (
     <div className="py-4 px-8 flex justify-between items-center m-0 w-full font-Montserrat">
       <div className="logo p-0">
@@ -22,7 +25,12 @@ const NavMenu = () => {
         ))}
       </div>
       <div>
-        <button className="px-8 py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white font-bold">
+        <button
+          onClick={() => {
+            void router.push("/auth/signup");
+          }}
+          className="px-8 py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white font-bold"
+        >
           Sign up
         </button>
       </div>

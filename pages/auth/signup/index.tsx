@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Input } from "@/components/Input";
 import { signUpDets } from "@/constants/data/authPages";
 import styles from "../../../styles/userAuth.module.css";
 
 const Signup = () => {
+  const router = useRouter();
+
   return (
     <section className="flex p-0 h-[100vh] font-Montserrat">
       <div className={`${styles.leftCont} relative`}>
@@ -71,7 +74,12 @@ const Signup = () => {
               ))}
             </div>
             <div className="w-full py-2"> </div>
-            <button className="w-full py-2 text-center bg-purple-500 hover:bg-purple-primary rounded text-white font-bold">
+            <button
+              onClick={() => {
+                void router.push("/dashboard");
+              }}
+              className="w-full py-2 text-center bg-purple-500 hover:bg-purple-primary rounded text-white font-bold"
+            >
               Create account
             </button>
           </form>
