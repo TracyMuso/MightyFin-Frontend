@@ -11,3 +11,39 @@ body {
 .circle-dshb {
   transition: all 0.7s ease-in-out;
 }
+
+// Onboarding guide
+.driver-popover.onboarding-user-guide {
+  background-color: #fff;
+  text-align: center;
+  counter-reset: rgba(0, 0, 0, 0.82);
+}
+
+.driver-popover.onboarding-user-guide .driver-popover-title {
+  font-size: 17px;
+  color: #410064;
+  font-weight: 600;
+  padding-top: 12px;
+}
+
+.driver-popover.onboarding-user-guide .driver-popover-description {
+  line-height: 22px;
+}
+
+.driver-popover.onboarding-user-guide button {
+  flex: 1;
+  text-align: center;
+  background-color: #ffc10d;
+  color: #000;
+  border: 2px solid#FFC10D;
+  text-shadow: none;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.driver-popover.onboarding-user-guide button:hover {
+  background-color: #f1be24;
+  color: #fff;
+}
+
+// end of onboarding guide
