@@ -39,9 +39,6 @@
 }
 
 .footerCTAContainer {
-  background-image: url("/Images/LandingPage/curly-line-1.png");
-  background-repeat: none;
-  background-size: cover;
   padding-bottom: 60px;
   height: 80vh;
   width: 100%;

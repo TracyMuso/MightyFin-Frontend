@@ -4,7 +4,10 @@ const CenterBar = () => {
   return (
     <div className="flex flex-col gap-[10px] p-[10px]">
       <div className="grid grid-cols-2 gap-[10px] ">
-        <div className="flex gap-6 rounded-md items-center h-[160px] w-full py-7 px-8 bg-white">
+        <div
+          id="current-loan"
+          className="flex gap-6 rounded-md items-center h-[160px] w-full py-7 px-8 bg-white"
+        >
           <Image
             src={"/Icons/yellow-money-bag.png"}
             width={70}
@@ -17,7 +20,10 @@ const CenterBar = () => {
             <p className="text-gray-100">Currency: ZMW</p>
           </div>
         </div>
-        <div className="flex gap-6 rounded-md items-center py-7 px-8 bg-white">
+        <div
+          id="loan-deduction"
+          className="flex gap-6 rounded-md items-center py-7 px-8 bg-white"
+        >
           <Image
             src={"/Icons/hand-money.png"}
             width={70}
