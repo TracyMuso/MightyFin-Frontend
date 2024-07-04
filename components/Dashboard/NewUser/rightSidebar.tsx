@@ -21,6 +21,7 @@ const RightSideBar = () => {
         <div className="flex flex-col items-start gap-5 w-[210px]">
           <div
             className={`${styles.main} flex w-full gap-6 items-center rounded-md py-3 px-4`}
+            id="repay-loan"
           >
             <Image
               src={"/Icons/Dollar.svg"}
@@ -32,6 +33,7 @@ const RightSideBar = () => {
           </div>
           <div
             className={`${styles.main} flex w-full gap-6 items-center rounded-md py-3 px-4`}
+            id="track-loan"
           >
             <Image
               src={"/Icons/Hourglass.svg"}
@@ -52,15 +54,24 @@ const RightSideBar = () => {
             />
             <span className="text-m">Customer Support</span>
           </div>
-          <button className="w-full py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white">
+          <button
+            id="apply-for-loan"
+            className="w-full py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white"
+          >
             Apply for Loan
           </button>
-          <button className="py-3 w-full text-center border border-purple-400 bg-white hover:bg-yellow-300 rounded-md text-black">
+          <button
+            id="withdraw-amount"
+            className="py-3 w-full text-center border border-purple-400 bg-white hover:bg-yellow-300 rounded-md text-black"
+          >
             Withdraw
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center mx-auto h-[300px] gap-0">
+      <div
+        id="payment-progress"
+        className="flex flex-col items-center mx-auto h-[300px] gap-0"
+      >
         <Pie percentage={0} colour="purple" />
         <h4 className="text-center text-gray-200 font-bold text-xl">
           K 0 Left
