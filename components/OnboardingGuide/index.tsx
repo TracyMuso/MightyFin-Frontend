@@ -14,11 +14,6 @@ import "driver.js/dist/driver.css";
  * 8. #withdraw-amount
  */
 
-/* const driverObj = driver({
-  popoverClass: "guide-theme",
-});
-*/
-
 const driverObj = driver({
   showButtons: ["next", "close"],
   nextBtnText: "Next",
@@ -89,30 +84,6 @@ const driverObj = driver({
     },
   ],
 });
-
-// const Guide = ({ title, text, onclick }) => {
-//   return (
-//     <div className="max-w-[390px] flex justify-center">
-//       <div className="flex flex-col w-auto h-auto gap-4 border items-center rounded-md py-5 px-6">
-//         <h4 className="text-purple-400 font-bold">{title}</h4>
-//         <p className="w-full text-center text-m leading-6">{text}</p>
-//         <div className="flex justify-between w-full">
-//           <button className="px-5 py-3 w-[140px] text-center border border-yellow-400 hover:bg-yellow-300 rounded-md text-black">
-//             Skip tour
-//           </button>
-//           <button
-//             onClick={onclick}
-//             className="px-5 py-3 w-[140px] text-center bg-yellow-400 hover:bg-yellow-300 rounded-md text-black"
-//           >
-//             Next
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Guide;
 
 function startTour() {
   driverObj.drive();
