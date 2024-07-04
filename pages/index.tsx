@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col font-Montserrat">
       <NavMenu />
       <Hero />
       <SocialProof />
