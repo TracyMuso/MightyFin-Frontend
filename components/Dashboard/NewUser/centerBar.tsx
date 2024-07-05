@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { TransactionChart } from "./transactionChart";
+import TranactionTable from "./transactionTable";
 
 const CenterBar = () => {
   const [hasLoan, setHasLoan] = useState(true);
@@ -8,6 +9,14 @@ const CenterBar = () => {
   return (
     <div className="flex flex-col gap-[10px] p-[10px]">
       <div className="grid grid-cols-2 gap-[10px] ">
+        <button
+          className="hidden"
+          onClick={() => {
+            setHasLoan(true);
+          }}
+        >
+          hi
+        </button>
         <div
           id="current-loan"
           className="flex gap-6 rounded-md items-center h-[160px] w-full py-7 px-8 bg-white"
@@ -45,6 +54,7 @@ const CenterBar = () => {
         {hasLoan && (
           <div>
             <TransactionChart />
+            <TranactionTable />
           </div>
         )}
         {/* <div className="flex flex-col gap-3 items-center">
