@@ -81,3 +81,11 @@ export type sidebarDataType = {
   title: string;
   onClick: () => void;
 };
+
+export interface TransactionTable {
+  txnId: string;
+  date: string;
+  amount: string;
+  status: string;
+  receipt: string;
+}
