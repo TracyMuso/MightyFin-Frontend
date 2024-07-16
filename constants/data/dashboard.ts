@@ -1,4 +1,4 @@
-import { type sidebarDataType } from "@/types";
+import type { sidebarDataType, TransactionTable } from "@/types";
 
 export const LeftSidebarData: sidebarDataType[] = [
   {
@@ -42,5 +42,36 @@ export const LeftSidebarData: sidebarDataType[] = [
     alt: "arrow left icon",
     title: "Log out",
     onClick: () => {},
+  },
+];
+
+export const TransactionTableData: TransactionTable[] = [
+  {
+    txnId: "MFT000026",
+    amount: "5000",
+    date: "May 18, 2024",
+    status: "paid",
+    receipt: "/receipt1",
+  },
+  {
+    txnId: "MFT000027",
+    amount: "3000",
+    date: "June 18, 2024",
+    status: "paid",
+    receipt: "/receipt2",
+  },
+  {
+    txnId: "MFT000028",
+    amount: "2000",
+    date: "Aug 18, 2024",
+    status: "pending",
+    receipt: "/receipt3",
+  },
+  {
+    txnId: "MFT000029",
+    amount: "8000",
+    date: "Sep 18, 2024",
+    status: "paid",
+    receipt: "/receipt4",
   },
 ];

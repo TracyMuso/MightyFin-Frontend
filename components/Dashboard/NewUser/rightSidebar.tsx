@@ -20,7 +20,7 @@ const RightSideBar = () => {
         </div>
         <div className="flex flex-col items-start gap-5 w-[210px]">
           <div
-            className={`${styles.main} flex w-full gap-6 items-center rounded-md py-3 px-4`}
+            className={`${styles.main} flex w-full gap-6 items-center rounded-md py-3 px-4 cursor-pointer`}
             id="repay-loan"
           >
             <Image
@@ -32,7 +32,7 @@ const RightSideBar = () => {
             <span className="text-m">Repay Loan</span>
           </div>
           <div
-            className={`${styles.main} flex w-full gap-6 items-center rounded-md py-3 px-4`}
+            className={`${styles.main} flex w-full gap-6 items-center rounded-md py-3 px-4 cursor-pointer`}
             id="track-loan"
           >
             <Image
@@ -44,7 +44,7 @@ const RightSideBar = () => {
             <span className="text-m">Track Loan</span>
           </div>
           <div
-            className={`${styles.main} flex gap-3 justify-between items-center rounded-md py-3 px-4`}
+            className={`${styles.main} flex gap-3 justify-between items-center rounded-md py-3 px-4 cursor-pointer`}
           >
             <Image
               src={"/Icons/fi-rr-headset.png"}
