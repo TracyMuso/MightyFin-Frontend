@@ -13,7 +13,9 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "npx prettier --write .",
-    "test-all": "npm run check-format && npm run check-lint && npm run check-prettier && npm run check-types && npm run build"
+    "test-all": "npm run check-format && npm run check-lint && npm run check-prettier && npm run check-types && npm run build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@next/font": "^14.0.4",
@@ -46,6 +48,15 @@
     "webpack": "^5.89.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.4",
+    "@storybook/addon-interactions": "^8.2.4",
+    "@storybook/addon-links": "^8.2.4",
+    "@storybook/addon-onboarding": "^8.2.4",
+    "@storybook/blocks": "^8.2.4",
+    "@storybook/nextjs": "^8.2.4",
+    "@storybook/react": "^8.2.4",
+    "@storybook/test": "^8.2.4",
     "@typescript-eslint/eslint-plugin": "7.0.1",
     "autoprefixer": "^10.0.1",
     "eslint-config-love": "^45.0.0",
@@ -53,8 +64,11 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
+    "sharp": "^0.33.4",
+    "storybook": "^8.2.4",
     "tailwindcss": "^3.3.0"
   },
   "lint-staged": {
