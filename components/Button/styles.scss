@@ -2,7 +2,7 @@
   align-items: center;
   line-height: 1;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 25px;
 }
 
 .btn:active {
@@ -23,7 +23,7 @@
 
 .btn--primary:hover {
   transition-timing-function: ease-in;
-  transition: 0.4s;
+  transition: 0.35s;
   transform: scale(1.06);
 }
 
