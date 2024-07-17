@@ -1,20 +1,75 @@
 import * as React from "react";
+import { HTMLInputTypeAttribute } from "react";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
-export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+export interface InputProps {
+  label?: string;
+  htmlFor: string;
+  placeholder?: string;
+  textArea?: boolean;
+  errorMessage?: string;
+  type?: HTMLInputTypeAttribute;
+  value?: string;
+  minWidth?: boolean;
+  suggestion?: "multi" | "single" | "select";
+  charCount?: number;
+  // ACTIONS
+  onTextChange: (text: string) => void;
+  onKeyDown?: (keyCode: number) => void;
+  onIconClick?: () => void;
+}
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, ...props }, ref) => {
-    return (
-      <input
-        type={type}
-        className="flex h-10 w-full rounded-md border-[#EDCCFF] border border-input bg-background px-3 py-2 text-m ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-        ref={ref}
-        {...props}
-      />
-    );
-  }
-);
-Input.displayName = "Input";
+const Input = (props: InputProps) => {
+  const {
+    label,
+    placeholder = "",
+    onTextChange,
+    type = "text",
+    errorMessage = "",
+    textArea = false,
+    value,
+    htmlFor,
+    minWidth = false,
+    onIconClick = () => {},
+    charCount = undefined,
+  } = props;
+  return (
+    <div className="w-full">
+      {label !== undefined && (
+        <label htmlFor={htmlFor} className="font-bold text-m">
+          {label}
+        </label>
+      )}
+      {type == "tel" ? (
+        <PhoneInput
+          className="w-full h-12 py-2 px-3 rounded-s tel-input border border-[#EEEBEF] focus:outline-none focus:border-[#410064]"
+          onChange={onTextChange}
+          placeholder={placeholder}
+          countries={["ZM"]}
+          international={false}
+          defaultCountry="ZM"
+          value={value}
+          countryCallingCodeEditable={false}
+        />
+      ) : textArea ? (
+        <textarea
+          placeholder={placeholder}
+          className="py-2 px-3 w-full"
+          onChange={(e) => onTextChange(e.target.value)}
+          value={value}
+        />
+      ) : (
+        <input
+          placeholder={placeholder}
+          required
+          className="w-full py-2 px-3 border border-[#EEEBEF] rounded-s focus:outline-none focus:border-[#410064] focus:border-[2px]"
+          onChange={(e) => onTextChange(e.target.value)}
+          value={value}
+        />
+      )}
+    </div>
+  );
+};
 
 export { Input };

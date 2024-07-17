@@ -24,9 +24,9 @@ export const signUpDets: inputDataType[] = [
   },
   {
     label: "Phone Number",
-    placeholder: "",
+    placeholder: "776 121 316",
     htmlFor: "phone-number",
-    inputType: "number",
+    inputType: "tel",
     id: "phone-number",
   },
   {
@@ -35,13 +35,6 @@ export const signUpDets: inputDataType[] = [
     htmlFor: "password",
     inputType: "",
     id: "password",
-  },
-  {
-    label: "Confirm Password",
-    placeholder: "",
-    htmlFor: "confirm-password",
-    inputType: "password",
-    id: "confirm-password",
   },
 ];
 
