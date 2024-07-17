@@ -61,7 +61,7 @@ const RightSideBar = () => {
           >
             Apply for Loan
           </button>
-          <div id="withdraw-amount">
+          <div id="withdraw-amount" className="w-full">
             <Button variant="tertiary" text="Withdraw" size="medium" />
           </div>
         </div>

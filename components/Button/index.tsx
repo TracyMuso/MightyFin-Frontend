@@ -5,10 +5,10 @@ interface ButtonInterface {
   onBtnClick?: () => void;
   size?: ButtonSize;
   width?: number | string;
-  variant: ButtonType;
+  variant: ButtonVariant;
 }
 
-type ButtonType = "primary" | "ghost" | "secondary" | "tertiary";
+type ButtonVariant = "primary" | "ghost" | "secondary" | "tertiary";
 
 type ButtonSize = "small" | "medium" | "large";
 
@@ -18,10 +18,24 @@ const Button = ({
   size = "medium",
   ...props
 }: ButtonInterface) => {
+  const mode = (variant: ButtonVariant) => {
+    switch (variant) {
+      case "primary":
+        return "btn--primary";
+      case "ghost":
+        return "btn--ghost";
+      case "secondary":
+        return "btn--secondary";
+      case "tertiary":
+        return "btn--tertiary";
+      default:
+        return "btn--primary";
+    }
+  };
   return (
     <button
       type="button"
-      className={["btn", `btn--${size}`, `btn--${variant}`].join(" ")}
+      className={["btn", `btn--${size}`, mode(variant)].join(" ")}
       {...props}
     >
       {text}
