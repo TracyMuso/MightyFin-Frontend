@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/Dashboard.module.css";
 import { Pie } from "./progressBar";
+import Button from "@/components/Button";
 
 const RightSideBar = () => {
   return (
@@ -60,12 +61,9 @@ const RightSideBar = () => {
           >
             Apply for Loan
           </button>
-          <button
-            id="withdraw-amount"
-            className="py-3 w-full text-center border border-purple-400 bg-white hover:bg-yellow-300 rounded-md text-black"
-          >
-            Withdraw
-          </button>
+          <div id="withdraw-amount">
+            <Button variant="tertiary" text="Withdraw" size="medium" />
+          </div>
         </div>
       </div>
       <div

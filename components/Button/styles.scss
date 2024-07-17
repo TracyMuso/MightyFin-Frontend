@@ -1,0 +1,45 @@
+.btn {
+  align-items: center;
+  line-height: 1;
+}
+
+.btn--primary {
+  color: #fff;
+  background: #410064;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn--secondary {
+  color: #000;
+  background-color: #ffc10d;
+  border: none;
+}
+
+.btn--tertiary {
+  background: white;
+  border: solid 1px #ffc10d;
+  columns: #000;
+  border-radius: 5px;
+}
+
+.btn--ghost {
+  color: #000;
+  background: #fff;
+  border: none;
+}
+
+.btn--small {
+  font-size: 12px;
+  padding: 12px 18px;
+}
+
+.btn--medium {
+  font-size: 20px;
+  padding: 12px 28px;
+}
+
+.btn--large {
+  font-size: 20px;
+  padding: 12px 36px;
+}
