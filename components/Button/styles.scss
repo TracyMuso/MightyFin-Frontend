@@ -1,0 +1,69 @@
+.btn {
+  align-items: center;
+  line-height: 1;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.btn:active {
+  transition-timing-function: ease-out;
+  transition: 0.9s;
+  transform: scale(0.6);
+}
+
+.btn--primary {
+  color: #fff;
+  background: #410064;
+  border: none;
+}
+
+.btn--primary:active {
+  background: #793d99;
+}
+
+.btn--primary:hover {
+  transition-timing-function: ease-in;
+  transition: 0.35s;
+  transform: scale(1.06);
+}
+
+.btn--secondary {
+  color: #000;
+  background-color: #ffc10d;
+  border: none;
+}
+
+.btn--secondary:active {
+  background-color: #ffcb33;
+}
+
+.btn--tertiary {
+  background: white;
+  border: solid 2px #ffc10d;
+  columns: #000;
+}
+
+.btn--tertiary:active {
+  background: #ffd866;
+}
+
+.btn--ghost {
+  color: #000;
+  background: #fff;
+  border: none;
+}
+
+.btn--small {
+  font-size: 12px;
+  padding: 12px 18px;
+}
+
+.btn--medium {
+  font-size: 16px;
+  padding: 14px 28px;
+}
+
+.btn--large {
+  font-size: 20px;
+  padding: 12px 36px;
+}
