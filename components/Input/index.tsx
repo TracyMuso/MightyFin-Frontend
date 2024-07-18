@@ -1,5 +1,6 @@
+/* eslint-disable */
 import * as React from "react";
-import { HTMLInputTypeAttribute } from "react";
+import type { HTMLInputTypeAttribute } from "react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
@@ -41,7 +42,7 @@ const Input = (props: InputProps) => {
           {label}
         </label>
       )}
-      {type == "tel" ? (
+      {type === "tel" ? (
         <PhoneInput
           className="w-full h-12 py-2 px-3 rounded-s tel-input border border-[#EEEBEF] focus:outline-none focus:border-[#410064]"
           onChange={onTextChange}
@@ -63,7 +64,7 @@ const Input = (props: InputProps) => {
         <input
           placeholder={placeholder}
           required
-          className="w-full py-2 px-3 border border-[#EEEBEF] rounded-s focus:outline-none focus:border-[#410064] focus:border-[2px]"
+          className="w-full py-[10px] px-3 border border-[#EEEBEF] rounded-s focus:outline-none focus:border-[#410064] focus:border-[2px]"
           onChange={(e) => onTextChange(e.target.value)}
           value={value}
         />

@@ -122,7 +122,7 @@ const Signup = () => {
             </div>
             <div>
               <div className="pt-5">
-                <label htmlFor="user-agreement" className="text-m">
+                <label htmlFor="user-agreement" className="text-sm">
                   <input
                     className="w-4 h-4 text-[#CFD3D4]  
                           focus:ring-purple-200 focus:ring-2 mr-1"

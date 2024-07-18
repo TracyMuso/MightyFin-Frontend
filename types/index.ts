@@ -72,7 +72,6 @@ export type inputDataType = {
   placeholder: string;
   htmlFor: string;
   inputType: string;
-  id: string;
 };
 
 export type sidebarDataType = {
