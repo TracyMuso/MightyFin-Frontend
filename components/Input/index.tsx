@@ -1,4 +1,3 @@
-/* eslint-disable */
 import * as React from "react";
 import type { HTMLInputTypeAttribute } from "react";
 import "react-phone-number-input/style.css";
@@ -45,7 +44,9 @@ const Input = (props: InputProps) => {
       {type === "tel" ? (
         <PhoneInput
           className="w-full h-12 py-2 px-3 rounded-s tel-input border border-[#EEEBEF] focus:outline-none focus:border-[#410064]"
-          onChange={onTextChange}
+          onChange={() => {
+            console.log("clicked");
+          }}
           placeholder={placeholder}
           countries={["ZM"]}
           international={false}

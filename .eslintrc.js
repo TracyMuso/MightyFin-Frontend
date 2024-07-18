@@ -22,6 +22,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-definitions": ["off"],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
     "import/no-anonymous-default-export": "off",
     "import/extensions": "off",

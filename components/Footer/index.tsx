@@ -59,9 +59,9 @@ const Footer = () => {
                 >
                   {group.title}
                 </Link>
-                {group.links.map((link, idx) => (
+                {group.links.map((link, index) => (
                   <Link
-                    key={idx}
+                    key={index}
                     href={link.link}
                     className="font-normal text-m leading-normal"
                   >
