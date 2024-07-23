@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { navLinks } from "@/constants/data/navMenu";
+import Button from "../Button";
 
 const NavMenu = () => {
   const router = useRouter();
@@ -23,15 +24,25 @@ const NavMenu = () => {
           </Link>
         ))}
       </div>
-      <div>
-        <button
-          onClick={() => {
-            void router.push("/auth/signup");
-          }}
-          className="px-8 py-3 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white font-bold"
-        >
-          Sign up
-        </button>
+      <div className="w-1/4 flex items-center justify-between">
+        <div className="2/5">
+          <Button
+            onBtnClick={() => {
+              void router.push("/auth/sign-in");
+            }}
+            text="log in"
+            variant="secondary"
+          />
+        </div>
+        <div className="w-3/5">
+          <Button
+            onBtnClick={() => {
+              void router.push("/auth/signup");
+            }}
+            text="Sign Up"
+            variant="primary"
+          />
+        </div>
       </div>
     </div>
   );
