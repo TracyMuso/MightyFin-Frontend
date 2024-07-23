@@ -30,11 +30,16 @@ const Signin = () => {
           <form>
             <div className="flex flex-col gap-4">
               {SignInDets.map((item, idx) => (
-                <div key={idx} className="py-1">
-                  <label htmlFor={item.htmlFor} className="font-bold text-m">
-                    {item.label}
-                  </label>
-                  <Input type={item.inputType} placeholder="" id={item.id} />
+                <div key={idx} className="w-full py-1">
+                  <Input
+                    onTextChange={() => {
+                      console.log("hi");
+                    }}
+                    type={item.inputType}
+                    placeholder=""
+                    label={item.label}
+                    htmlFor={item.htmlFor}
+                  />
                 </div>
               ))}
             </div>

@@ -66,10 +66,15 @@ const Signup = () => {
             <div className="grid grid-cols-2 gap-4">
               {signUpDets.map((item, idx) => (
                 <div key={idx} className="w-full py-1">
-                  <label htmlFor={item.htmlFor} className="font-bold text-m">
-                    {item.label}
-                  </label>
-                  <Input type={item.inputType} placeholder="" id={item.id} />
+                  <Input
+                    onTextChange={() => {
+                      console.log("hi");
+                    }}
+                    htmlFor={item.htmlFor}
+                    type={item.inputType}
+                    label={item.label}
+                    placeholder={item.placeholder}
+                  />
                 </div>
               ))}
             </div>
@@ -117,7 +122,7 @@ const Signup = () => {
             </div>
             <div>
               <div className="pt-5">
-                <label htmlFor="user-agreement" className="text-m">
+                <label htmlFor="user-agreement" className="text-sm">
                   <input
                     className="w-4 h-4 text-[#CFD3D4]  
                           focus:ring-purple-200 focus:ring-2 mr-1"

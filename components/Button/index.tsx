@@ -18,8 +18,8 @@ const Button = ({
   size = "medium",
   ...props
 }: ButtonInterface) => {
-  const mode = (variant: ButtonVariant) => {
-    switch (variant) {
+  const mode = (vars: ButtonVariant) => {
+    switch (vars) {
       case "primary":
         return "btn--primary";
       case "ghost":

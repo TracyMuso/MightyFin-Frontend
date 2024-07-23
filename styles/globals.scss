@@ -10,6 +10,47 @@ body {
   background-color: #fff;
 }
 
+.tel-input .PhoneInputInput {
+  outline: none;
+  padding: 1px;
+  font-size: 14px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+::placeholder {
+  color: rgb(160, 154, 154);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: rgb(160, 154, 154);
+} /* Edge 12 -18 */
+::-webkit-input-placeholder {
+  color: rgb(160, 154, 154);
+}
+:-moz-placeholder {
+  color: rgb(160, 154, 154);
+} /* FF 4-18 */
+::-moz-placeholder {
+  color: rgb(160, 154, 154);
+} /* FF 19+ */
+
 .circle-dshb {
   transition: all 0.7s ease-in-out;
 }

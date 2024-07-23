@@ -6,42 +6,30 @@ export const signUpDets: inputDataType[] = [
     placeholder: "",
     htmlFor: "first-name",
     inputType: "text",
-    id: "first-name",
   },
   {
     label: "Last Name",
     placeholder: "",
     htmlFor: "last-name",
     inputType: "text",
-    id: "last-name",
   },
   {
     label: "Email Address",
     placeholder: "",
     htmlFor: "email",
     inputType: "email",
-    id: "email",
   },
   {
     label: "Phone Number",
-    placeholder: "",
+    placeholder: "776 121 316",
     htmlFor: "phone-number",
-    inputType: "number",
-    id: "phone-number",
+    inputType: "tel",
   },
   {
     label: "Password",
     placeholder: "password",
     htmlFor: "password",
     inputType: "",
-    id: "password",
-  },
-  {
-    label: "Confirm Password",
-    placeholder: "",
-    htmlFor: "confirm-password",
-    inputType: "password",
-    id: "confirm-password",
   },
 ];
 
@@ -51,13 +39,11 @@ export const SignInDets: inputDataType[] = [
     placeholder: "",
     htmlFor: "email",
     inputType: "email",
-    id: "email",
   },
   {
     label: "Password",
     placeholder: "password",
     htmlFor: "password",
     inputType: "",
-    id: "password",
   },
 ];
