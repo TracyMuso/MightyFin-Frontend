@@ -5,18 +5,17 @@ import { navLinks } from "@/constants/data/navMenu";
 
 const NavMenu = () => {
   const router = useRouter();
-
   return (
-    <div className="py-4 px-8 flex justify-between items-center m-0 w-full font-Montserrat">
+    <div className="py-4 px-9 flex border-gray-50 border-b-2 justify-between items-center m-0 w-full font-Montserrat">
       <div className="logo p-0">
         <Link href={"/"}>
-          <Image src="/Images/Logo.png" alt="logo" width={180} height={100} />
+          <Image src="/Images/Logo.png" alt="logo" width={225} height={100} />
         </Link>
       </div>
-      <div className="flex justify-between gap-4">
+      <div className="nav-items flex justify-between gap-2 py-4 px-6 rounded-[50px]">
         {navLinks.map((item, idx) => (
           <Link
-            className="hover:underline hover:decoration-4 hover:decoration-purple-primary"
+            className={`${router.pathname == item.url ? "nav-item-active" : ""} px-4 py-2 rounded-[50px]`}
             href={item.url}
             key={idx}
           >
