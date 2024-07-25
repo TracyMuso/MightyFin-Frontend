@@ -60,3 +60,18 @@
   height: 214px;
   width: 5px;
 }
+
+.productCard {
+  width: 320px;
+  height: 340px;
+}
+
+.pcBgImg {
+  position: absolute;
+  background: url("/Images/LandingPage/card-elipse.png") no-repeat center;
+  background-size: contain;
+  width: 155px;
+  height: 90px;
+  top: 0;
+  right: 0;
+}

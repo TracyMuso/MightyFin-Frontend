@@ -16,6 +16,7 @@ const Button = ({
   text,
   variant,
   size = "medium",
+  onBtnClick,
   ...props
 }: ButtonInterface) => {
   const mode = (vars: ButtonVariant) => {
@@ -36,6 +37,7 @@ const Button = ({
     <button
       type="button"
       className={["btn", `btn--${size}`, mode(variant)].join(" ")}
+      onClick={onBtnClick}
       {...props}
     >
       {text}
