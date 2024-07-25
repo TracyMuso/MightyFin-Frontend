@@ -5,6 +5,7 @@ import type {
   MiniBlogDataType,
   BlogCategoriesDataType,
   ProductCardType,
+  WhyUsCardType,
 } from "@/types";
 
 export const PartnershipData: PartnershipDataType[] = [
@@ -159,5 +160,28 @@ export const ProductCardData: ProductCardType[] = [
     text: "Empowering women led businesses through working capital loans",
     title: "For women",
     productDetails: "#",
+  },
+];
+
+export const WhyUsCardData: WhyUsCardType[] = [
+  {
+    icon: "/Icons/mdi_clock-fast.png",
+    text: "Apply for a loan in minutes with our user-friendly platform.",
+    title: "Fast & Streamlined",
+  },
+  {
+    icon: "/Icons/fluent_shield-checkmark-24-regular.png",
+    text: "Choose a loan that fits your needs with a variety of terms, amounts, and purposes.",
+    title: "Flexible Options",
+  },
+  {
+    icon: "/Icons/solar_graph-outline.png",
+    text: "We offer some of the most competitive interest rates in the market.",
+    title: "Competitive Rates",
+  },
+  {
+    icon: "/Icons/heroicons_eye.png",
+    text: "Clear and upfront fees, so you always know what to expect.",
+    title: "Transparent Fees",
   },
 ];

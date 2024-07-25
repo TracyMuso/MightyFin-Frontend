@@ -1,5 +1,7 @@
 import styles from "@/styles/landingPage.module.css";
 import Button from "../Button";
+import { WhyUsCardData } from "@/constants/data/landingPage";
+import WhyUsCard from "../Cards/whyUs";
 
 const Whyus = () => {
   return (
@@ -16,7 +18,11 @@ const Whyus = () => {
           <Button text="Apply now" variant="ghost" />
         </div>
       </div>
-      <div className="mf-pros"></div>
+      <div className="mf-pros flex flex-wrap p-5 ">
+        {WhyUsCardData.map((item, idx) => (
+          <WhyUsCard {...item} key={idx} />
+        ))}
+      </div>
     </section>
   );
 };

@@ -95,3 +95,9 @@ export interface ProductCardType {
   text: string;
   productDetails: string;
 }
+
+export interface WhyUsCardType {
+  title: string;
+  icon: string;
+  text: string;
+}
