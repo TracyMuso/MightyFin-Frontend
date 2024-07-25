@@ -75,3 +75,8 @@
   top: 0;
   right: 0;
 }
+
+.whyUs {
+  background: linear-gradient(90deg, #410064 0%, #410064 50%, #912d73 100%);
+  padding: 48px 64px;
+}
