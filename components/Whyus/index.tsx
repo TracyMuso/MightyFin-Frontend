@@ -18,7 +18,7 @@ const Whyus = () => {
           <Button text="Apply now" variant="ghost" />
         </div>
       </div>
-      <div className="mf-pros flex flex-wrap p-5 ">
+      <div className="mf-pros grid grid-rows-2 grid-cols-2 w-1/2 justify-center gap-5">
         {WhyUsCardData.map((item, idx) => (
           <WhyUsCard {...item} key={idx} />
         ))}
