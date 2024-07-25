@@ -4,6 +4,7 @@ import type {
   BlogDataType,
   MiniBlogDataType,
   BlogCategoriesDataType,
+  ProductCardType,
 } from "@/types";
 
 export const PartnershipData: PartnershipDataType[] = [
@@ -137,5 +138,26 @@ export const BlogCategoriesData: BlogCategoriesDataType[] = [
   {
     category: "Lifestyle & Finance",
     url: "#",
+  },
+];
+
+export const ProductCardData: ProductCardType[] = [
+  {
+    icon: "/Icons/Personal-Loan.png",
+    text: "Personal Loans for Civil Servants, MOU Employees & Secured Options",
+    title: "Personal",
+    productDetails: "#",
+  },
+  {
+    icon: "/Icons/house.png",
+    text: "Grow your business with our credit financing solutions for SMEs",
+    title: "SMEs",
+    productDetails: "#",
+  },
+  {
+    icon: "/Icons/woman.png",
+    text: "Empowering women led businesses through working capital loans",
+    title: "For women",
+    productDetails: "#",
   },
 ];
