@@ -88,3 +88,10 @@ export interface TransactionTable {
   status: string;
   receipt: string;
 }
+
+export interface ProductCardType {
+  icon: string;
+  title: string;
+  text: string;
+  productDetails: string;
+}
