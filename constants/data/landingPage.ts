@@ -10,18 +10,6 @@ import type {
 
 export const PartnershipData: PartnershipDataType[] = [
   {
-    alt: "aws icon",
-    url: "/Images/LandingPage/aws.png",
-  },
-  {
-    alt: "seed-stars icon",
-    url: "/Images/LandingPage/ss.png",
-  },
-  {
-    alt: "growth Africa icon",
-    url: "/Images/LandingPage/ga.png",
-  },
-  {
     alt: "village capital icon",
     url: "/Images/LandingPage/vc.png",
   },
@@ -32,14 +20,6 @@ export const PartnershipData: PartnershipDataType[] = [
   {
     alt: "baobab icon",
     url: "/Images/LandingPage/baobab.png",
-  },
-  {
-    alt: "stanchart icon",
-    url: "/Images/LandingPage/sc.png",
-  },
-  {
-    alt: "bongohive icon",
-    url: "/Images/LandingPage/bongohive.png",
   },
 ];
 
@@ -92,15 +72,11 @@ export const LoanStepsData: LoanStepDataType[] = [
 export const BlogData: BlogDataType[] = [
   {
     title: "Understanding Your Borrowing Options",
-    author: "Chanda Phiri",
-    date: "12th March, 2024",
     content:
       "It will explain different loan types (personal, business, auto etc.), common loan terms (interest rate, repayment period), and factors to consider when choosing a loan...",
   },
   {
     title: "How to Effectively repay your loan",
-    author: "Vwa Boa",
-    date: "13th March, 2024",
     content:
       "If you have personal loan debt and are in a financial position to pay it off early, doing so could save you money on interest and boost your credit score...",
   },

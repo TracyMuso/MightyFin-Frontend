@@ -6,6 +6,7 @@ import BlogandNews from "@/components/BlogxNews";
 import Footer from "@/components/Footer";
 import Products from "@/components/Products";
 import Whyus from "@/components/Whyus";
+import SocialProof from "@/components/SocialProof";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Whyus />
       <LoanSteps />
       <BlogandNews />
+      <SocialProof />
       <Footer />
     </main>
   );

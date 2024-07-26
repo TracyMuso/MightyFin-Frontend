@@ -43,8 +43,6 @@ export interface LoanStepDataType {
 
 export interface BlogDataType {
   title: string;
-  author: string;
-  date: string;
   content: string;
 }
 

@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <section className="font-Montserrat">
+    <section className="font-Montserrat pt-16">
       <div className={`${styles.footerCTAContainer} flex justify-center`}>
         <div className={`${styles.footerCtaMain} flex justify-between`}>
           <div className="p-6 w-2/3">
@@ -87,7 +87,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center justify-between py-8 w-[90%] mx-auto">
-          <span className="text-gray-400">© 2024 All rights reserved</span>
+          <span className="text-gray-400">
+            © 2024 All rights reserved | Mighty finance
+          </span>
           <div className="flex items-center justify-between w-1/5">
             {footerSocialLinks.map((item, idx) => (
               <Image
