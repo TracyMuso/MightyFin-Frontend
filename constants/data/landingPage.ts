@@ -4,21 +4,11 @@ import type {
   BlogDataType,
   MiniBlogDataType,
   BlogCategoriesDataType,
+  ProductCardType,
+  WhyUsCardType,
 } from "@/types";
 
 export const PartnershipData: PartnershipDataType[] = [
-  {
-    alt: "aws icon",
-    url: "/Images/LandingPage/aws.png",
-  },
-  {
-    alt: "seed-stars icon",
-    url: "/Images/LandingPage/ss.png",
-  },
-  {
-    alt: "growth Africa icon",
-    url: "/Images/LandingPage/ga.png",
-  },
   {
     alt: "village capital icon",
     url: "/Images/LandingPage/vc.png",
@@ -30,14 +20,6 @@ export const PartnershipData: PartnershipDataType[] = [
   {
     alt: "baobab icon",
     url: "/Images/LandingPage/baobab.png",
-  },
-  {
-    alt: "stanchart icon",
-    url: "/Images/LandingPage/sc.png",
-  },
-  {
-    alt: "bongohive icon",
-    url: "/Images/LandingPage/bongohive.png",
   },
 ];
 
@@ -63,15 +45,15 @@ export const LeadershipData: PartnershipDataType[] = [
 export const LoanStepsData: LoanStepDataType[] = [
   {
     step: 1,
-    icon: "/Icons/system-uicons_user-add.png",
-    title: "Online Account Registration",
-    text: "Create Your Account",
-  },
-  {
-    step: 2,
     icon: "/Icons/fluent_form-24-regular.png",
     title: "Loan Application Form",
     text: "Select Loan & Enter Details",
+  },
+  {
+    step: 2,
+    icon: "/Icons/system-uicons_user-add.png",
+    title: "Online Account Registration",
+    text: "Create Your Account",
   },
   {
     step: 3,
@@ -90,15 +72,11 @@ export const LoanStepsData: LoanStepDataType[] = [
 export const BlogData: BlogDataType[] = [
   {
     title: "Understanding Your Borrowing Options",
-    author: "Chanda Phiri",
-    date: "12th March, 2024",
     content:
       "It will explain different loan types (personal, business, auto etc.), common loan terms (interest rate, repayment period), and factors to consider when choosing a loan...",
   },
   {
     title: "How to Effectively repay your loan",
-    author: "Vwa Boa",
-    date: "13th March, 2024",
     content:
       "If you have personal loan debt and are in a financial position to pay it off early, doing so could save you money on interest and boost your credit score...",
   },
@@ -137,5 +115,49 @@ export const BlogCategoriesData: BlogCategoriesDataType[] = [
   {
     category: "Lifestyle & Finance",
     url: "#",
+  },
+];
+
+export const ProductCardData: ProductCardType[] = [
+  {
+    icon: "/Icons/Personal-Loan.png",
+    text: "Personal Loans for Civil Servants, MOU Employees & Secured Options",
+    title: "Personal",
+    productDetails: "#",
+  },
+  {
+    icon: "/Icons/house.png",
+    text: "Grow your business with our credit financing solutions for SMEs",
+    title: "SMEs",
+    productDetails: "#",
+  },
+  {
+    icon: "/Icons/woman.png",
+    text: "Empowering women led businesses through working capital loans",
+    title: "For women",
+    productDetails: "#",
+  },
+];
+
+export const WhyUsCardData: WhyUsCardType[] = [
+  {
+    icon: "/Icons/mdi_clock-fast.png",
+    text: "Apply for a loan in minutes with our user-friendly platform.",
+    title: "Fast & Streamlined",
+  },
+  {
+    icon: "/Icons/fluent_shield-checkmark-24-regular.png",
+    text: "Choose a loan that fits your needs with a variety of terms, amounts, and purposes.",
+    title: "Flexible Options",
+  },
+  {
+    icon: "/Icons/solar_graph-outline.png",
+    text: "We offer some of the most competitive interest rates in the market.",
+    title: "Competitive Rates",
+  },
+  {
+    icon: "/Icons/heroicons_eye.png",
+    text: "Clear and upfront fees, so you always know what to expect.",
+    title: "Transparent Fees",
   },
 ];

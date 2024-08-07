@@ -43,8 +43,6 @@ export interface LoanStepDataType {
 
 export interface BlogDataType {
   title: string;
-  author: string;
-  date: string;
   content: string;
 }
 
@@ -87,4 +85,17 @@ export interface TransactionTable {
   amount: string;
   status: string;
   receipt: string;
+}
+
+export interface ProductCardType {
+  icon: string;
+  title: string;
+  text: string;
+  productDetails: string;
+}
+
+export interface WhyUsCardType {
+  title: string;
+  icon: string;
+  text: string;
 }

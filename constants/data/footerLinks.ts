@@ -22,7 +22,7 @@ export const footerLinks: FooterLink[] = [
         link: "#",
       },
       {
-        label: "About Us",
+        label: "About",
         link: "#",
       },
       {
@@ -40,6 +40,14 @@ export const footerLinks: FooterLink[] = [
     titleLink: "#",
     links: [
       {
+        label: "FAQs",
+        link: "#",
+      },
+      {
+        label: "Legal",
+        link: "#",
+      },
+      {
         label: "Terms and conditions",
         link: "#",
       },
@@ -47,9 +55,15 @@ export const footerLinks: FooterLink[] = [
         label: "Privacy",
         link: "#",
       },
+      {
+        label: "Sitemap",
+        link: "#",
+      },
     ],
   },
 ];
+
+export {};
 
 export const footerContactLinks: SocialLink[] = [
   {

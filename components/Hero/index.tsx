@@ -1,64 +1,35 @@
 import Image from "next/image";
 import styles from "../../styles/landingPage.module.css";
 import Point from "./point";
+import Button from "../Button";
 
 const Hero = () => {
   return (
-    <section className="relative h-[100vh] px-6 font-Montserrat">
-      <div className="absolute main-text text-left left-[5%] top-[5%] w-3/5 pb-12">
-        <article className="py-12">
-          <h1 className="text-4xl font-extrabold leading-12 pb-8 pt-6">
-            <span className="text-yellow-300">Empower </span>Your Future with
-            Streamlined Loan Options
+    <section className="container flex items-center justify-between h-[85vh] px-6 font-Montserrat">
+      <div className="main-text text-left w-3/5 pb-12 pl-12">
+        <article className="py-12 gap-2">
+          <span className="text-3xl">Need a loan?</span>
+          <h1 className="text-4xl font-extrabold leading-12 pb-8 pt-6 text-purple-400">
+            Fast & <span className="text-yellow-300">Easy </span>Loans Apply in
+            Minutes
           </h1>
-          <p className="w-4/5 text-gray-400">
-            We are a financial technology company offering convenient and
-            accessible loan solutions. We provide secure and personalized loan
-            options to help you achieve your goals. Simplifying access to
-            finance. We make it easy to apply, manage, and repay your loans
-            online, anytime, anywhere.
+          <p className="w-4/5 text-gray-400 text-xl">
+            We simplify the loan process, so you can focus on your goals
           </p>
         </article>
-        <div className="pb-6">
-          <Image
-            src={"/Images/LandingPage/UserImages.png"}
-            alt="user images"
-            width={220}
-            height={60}
-          />
-          <span className="text-purple-500 font-extrabold py-6 text-xl">
-            Over 3.5k active users
-          </span>
+        <div className="w-2/5">
+          <Button text="Apply now!" variant="primary" />
         </div>
-        <button className="px-12 py-4 w-1/2 text-center bg-purple-500 hover:bg-purple-primary rounded-md text-white font-bold">
-          Get started!
-        </button>
       </div>
-      <div
-        className={`${styles.heroImage} absolute w-[630px] h-[553px] right-[4%] top-[4%]`}
-      >
-        <div className="absolute w-11/12 right-[10%] top-[5%] h-[530px]">
-          <div className="rounded-md px-5 py-3 w-[365px] h-[75px] absolute left-[49%]">
-            <Point
-              title="100% Secure"
-              text="Your data and funds are protected."
-            />
-          </div>
-          <div className="rounded-md px-5 py-3 absolute w-[370px] top-[45%] left-[55%]">
-            <Point
-              title="Fast & Easy Applications"
-              text="Apply for loans online in minutes"
-            />
-          </div>
-          <div className="rounded-md px-5 py-3 w-[390px] absolute top-[73%] right-[50%]">
-            <Point
-              title="Transparent Terms"
-              text="No hidden fees, clear communication"
-            />
-          </div>
-          <div className="rounded-md px-5 py-3 absolute w-[300px] top-[87%] left-[60%]">
-            <Point title="24/7" text="Account Management" />
-          </div>
+      <div className={`relative`}>
+        <Image
+          src={"/Images/LandingPage/hero-img.png"}
+          width={540}
+          height={392}
+          alt="smiling-woman-scrolling-on-phone"
+        />
+        <div className="absolute top-[170px] right-[7px]">
+          <Point title="How much do you need?" text="apply now" />
         </div>
       </div>
     </section>
