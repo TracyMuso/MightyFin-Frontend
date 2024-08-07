@@ -63,6 +63,8 @@ export const footerLinks: FooterLink[] = [
   },
 ];
 
+export {};
+
 export const footerContactLinks: SocialLink[] = [
   {
     label: "+260 97 8555299",
